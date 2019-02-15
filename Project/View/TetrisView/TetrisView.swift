@@ -32,6 +32,6 @@ class TetrisView: UIView {
     }
 
     @IBAction func backChangePassword() {
-        
+        delegate?.backToProfile()
     }
 }
