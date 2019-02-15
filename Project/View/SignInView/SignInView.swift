@@ -10,7 +10,7 @@ import UIKit
 
 class SignInView: UIView {
     
-    // IBOutlet
+    // IBOutlets
     @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var email: UITextField!

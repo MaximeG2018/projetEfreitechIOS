@@ -20,41 +20,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trollTetris" translatesAutoresizingMaskIntoConstraints="NO" id="w8n-5O-rEZ">
-                    <rect key="frame" x="0.0" y="231" width="375" height="351"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trollTetris" translatesAutoresizingMaskIntoConstraints="NO" id="w8n-5O-rEZ">
+                    <rect key="frame" x="0.0" y="247.5" width="375" height="191"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assez Simple à trouver :D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-G7-HQS">
-                    <rect key="frame" x="89" y="128" width="196" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assez Simple à trouver :D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-G7-HQS">
+                    <rect key="frame" x="16" y="110" width="343" height="21"/>
                     <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yassine n'est pas au courant pour cet écran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1F-wQ-bTc">
-                    <rect key="frame" x="21" y="618" width="333" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Je ne pense pas que le Tétris soit fonctionnel ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6f-Z8-EL9">
+                    <rect key="frame" x="4" y="163" width="367" height="20.5"/>
                     <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Je ne pense pas que le Tétris soit fonctionnel ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6f-Z8-EL9">
-                    <rect key="frame" x="6" y="163" width="363" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TETRIS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ad-jx-sgk">
-                    <rect key="frame" x="139" y="57" width="140" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8By-ZZ-Ydn">
-                    <rect key="frame" x="6" y="29" width="71" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8By-ZZ-Ydn">
+                    <rect key="frame" x="16" y="28" width="343" height="30"/>
                     <state key="normal" title="Return">
                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -62,9 +44,32 @@
                         <action selector="buttonReturn" destination="-1" eventType="touchUpInside" id="fCw-dY-h68"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TETRIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ad-jx-sgk">
+                    <rect key="frame" x="16" y="66" width="343" height="36"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.8872960928638236" blue="0.78781822167406046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="w8n-5O-rEZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0J4-fi-1kp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Ad-jx-sgk" secondAttribute="trailing" constant="16" id="5SA-hN-JOV"/>
+                <constraint firstItem="8By-ZZ-Ydn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="80m-M2-PGC"/>
+                <constraint firstItem="w8n-5O-rEZ" firstAttribute="top" secondItem="c6f-Z8-EL9" secondAttribute="bottom" constant="64" id="L4e-mD-bbf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Kf2-G7-HQS" secondAttribute="trailing" constant="16" id="OI6-ZS-9A8"/>
+                <constraint firstItem="Kf2-G7-HQS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="RYA-48-e2E"/>
+                <constraint firstItem="Kf2-G7-HQS" firstAttribute="top" secondItem="0Ad-jx-sgk" secondAttribute="bottom" constant="8" id="TZ1-qM-Izi"/>
+                <constraint firstItem="c6f-Z8-EL9" firstAttribute="top" secondItem="Kf2-G7-HQS" secondAttribute="bottom" constant="32" id="VR7-bh-dt5"/>
+                <constraint firstItem="8By-ZZ-Ydn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ZJS-Bl-5bM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c6f-Z8-EL9" secondAttribute="trailing" constant="4" id="bW7-56-dT0"/>
+                <constraint firstItem="0Ad-jx-sgk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="hKe-N1-atY"/>
+                <constraint firstItem="c6f-Z8-EL9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="mPB-FT-dqn"/>
+                <constraint firstItem="w8n-5O-rEZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="olx-oJ-0Xi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8By-ZZ-Ydn" secondAttribute="trailing" constant="16" id="pBp-IL-lKZ"/>
+                <constraint firstItem="0Ad-jx-sgk" firstAttribute="top" secondItem="8By-ZZ-Ydn" secondAttribute="bottom" constant="8" id="qh5-FK-jVp"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="132" y="154.27286356821591"/>
         </view>

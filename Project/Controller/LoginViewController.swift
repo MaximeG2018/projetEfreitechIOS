@@ -10,12 +10,13 @@ import UIKit
 
 class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelegate, ProfilViewDelegate, TetrisViewDelegate {
     
+    // IBOutlets
     @IBOutlet weak var signInView: SignInView!
     @IBOutlet weak var signUpView: SignUpView!
     @IBOutlet weak var profilView: ProfilView!
     @IBOutlet weak var tetrisView: TetrisView!
     
-    
+    // Initialisation
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,13 +31,13 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         super.didReceiveMemoryWarning()
     }
     
+    // Méthodes permettant la "navigation" entre les Views
     func goToSignUp() {
         signUpView.isHidden = false
         signInView.isHidden = true
         profilView.isHidden = true
         tetrisView.isHidden = true
         resetLabelErrorRegister()
-        
     }
     func goToSignIn() {
         signInView.isHidden = false
@@ -65,6 +66,7 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         tetrisView.isHidden = true
     }
     
+    // Méthode permettant la création d'un User ainsi que la vérification des champs => Action button Register (SignUpView)
     func createRegister() {
         
         resetLabelErrorRegister()
@@ -93,6 +95,7 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         }
     }
     
+    // Méthode permettant la connexion de l'User ainsi que la vérification des champs => Action button Login (SignUpView)
     func login() {
         
         guard let email = signInView.email.text else {return}
@@ -109,6 +112,7 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         }
    }
     
+    // Méthode permettant le changement de password de l'User ainsi que la vérification des champs => Action button Change Password (ProfilView)
     func changePassword(){
     
         guard let password = profilView.password.text else {return}
@@ -130,6 +134,7 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         }
     }
     
+    // Méthode permettant la verification syntaxique d'un Email
     func confirmEmail(param: String) -> Bool {
         var result: Bool = false
         for character in param {
@@ -141,18 +146,17 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
     }
     
     
+    // Méthodes permettant de réinitialiser les TextInput ainsi que les Labels
     func resetFieldsLabelProfilView() {
         profilView.password.text = ""
         profilView.confirmPassword.text = ""
         profilView.errorPassword.text = ""
     }
-    
     func resetLabelErrorRegister() {
         signUpView.ErrorField.text = ""
         signUpView.validationPassword.text = ""
         signUpView.validationEmail.text = ""
     }
-    
     func resetLabelErrorSignIn(){
         signInView.errorLogin.text = ""
     }

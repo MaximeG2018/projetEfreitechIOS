@@ -11,7 +11,7 @@ import UIKit
 
 class SignUpView: UIView {
 
-    // IBOutlet
+    // IBOutlets
     @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var emailInput: UITextField!
