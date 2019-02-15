@@ -2,8 +2,8 @@
 //  SignUpView.swift
 //  finalProject
 //
-//  Created by Yassine FATIHI on 14/02/2019.
-//  Copyright © 2019 Yassine FATIHI. All rights reserved.
+//  Created by Yassine FATIHI / Maxime GOUENARD on 14/02/2019.
+//  Copyright © 2019 Yassine FATIHI / Maxime GOUENARD All rights reserved.
 //
 
 import UIKit
@@ -11,6 +11,7 @@ import UIKit
 
 class SignUpView: UIView {
 
+    // IBOutlet
     @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var emailInput: UITextField!
@@ -21,20 +22,20 @@ class SignUpView: UIView {
     
     @IBOutlet weak var validationEmail: UILabel!
     @IBOutlet weak var validationPassword: UILabel!
-    
     @IBOutlet weak var ErrorField: UILabel!
+    
+    // Delegate
     var delegate: SignUpViewDelegate?
     
+    // Méthodes Initialisation
     override init(frame: CGRect){
         super.init(frame: frame)
         commontInit()
     }
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commontInit()
     }
-    
     private func commontInit(){
         Bundle.main.loadNibNamed("SignUpView", owner: self, options:nil)
         addSubview(contentView)
@@ -42,6 +43,7 @@ class SignUpView: UIView {
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
     
+    // Méthodes Action
     @IBAction func buttonGoToLogin() {
         delegate?.goToSignIn()
     }

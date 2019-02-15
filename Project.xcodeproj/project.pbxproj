@@ -86,8 +86,8 @@
 		528E48D42215EE6900E39BAB /* ProfilView */ = {
 			isa = PBXGroup;
 			children = (
-				CCEB69B02215D4BE00965F45 /* ProfilViewDelegate.swift */,
 				5FDA8AB9221568940049EB95 /* ProfilView.swift */,
+				CCEB69B02215D4BE00965F45 /* ProfilViewDelegate.swift */,
 				5F5158D622154F2600917F47 /* ProfilView.xib */,
 			);
 			path = ProfilView;

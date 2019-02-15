@@ -55,11 +55,11 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8By-ZZ-Ydn">
                     <rect key="frame" x="6" y="29" width="71" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Retour">
+                    <state key="normal" title="Return">
                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
-                        <action selector="backChangePassword" destination="-1" eventType="touchUpInside" id="cbP-pl-iwh"/>
+                        <action selector="buttonReturn" destination="-1" eventType="touchUpInside" id="fCw-dY-h68"/>
                     </connections>
                 </button>
             </subviews>

@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  finalProject
 //
-//  Created by Yassine FATIHI on 14/02/2019.
-//  Copyright © 2019 Yassine FATIHI. All rights reserved.
+//  Created by Yassine FATIHI / Maxime GOUENARD on 14/02/2019.
+//  Copyright © 2019 Yassine FATIHI / Maxime GOUENARD All rights reserved.
 //
 
 import UIKit
@@ -35,6 +35,7 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         signInView.isHidden = true
         profilView.isHidden = true
         tetrisView.isHidden = true
+        resetLabelErrorRegister()
         
     }
     func goToSignIn() {
@@ -42,13 +43,14 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         signUpView.isHidden = true
         profilView.isHidden = true
         tetrisView.isHidden = true
+        resetLabelErrorSignIn()
     }
     func goToProfile() {
         profilView.isHidden = false
         signInView.isHidden = true
         signUpView.isHidden = true
         tetrisView.isHidden = true
-        resetFields()
+        resetFieldsLabelProfilView()
     }
     func goToSurprise() {
         tetrisView.isHidden = false
@@ -64,6 +66,8 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
     }
     
     func createRegister() {
+        
+        resetLabelErrorRegister()
         
         guard let email: String = signUpView.emailInput.text else {return}
         guard let password: String =  signUpView.passInput.text else {return}
@@ -100,7 +104,8 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
             goToProfile()
         }
         else{
-            print("Unable to find a match with this pair of email / password")
+            signInView.errorLogin.text = "Unable to find a match with this pair of email / password"
+            signInView.errorLogin.textColor = UIColor.red
         }
    }
     
@@ -136,9 +141,19 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
     }
     
     
-    func resetFields() {
+    func resetFieldsLabelProfilView() {
         profilView.password.text = ""
         profilView.confirmPassword.text = ""
         profilView.errorPassword.text = ""
+    }
+    
+    func resetLabelErrorRegister() {
+        signUpView.ErrorField.text = ""
+        signUpView.validationPassword.text = ""
+        signUpView.validationEmail.text = ""
+    }
+    
+    func resetLabelErrorSignIn(){
+        signInView.errorLogin.text = ""
     }
 }
