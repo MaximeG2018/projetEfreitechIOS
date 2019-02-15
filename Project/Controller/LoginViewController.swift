@@ -116,7 +116,8 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
             }else {
                 RegisterUser.instance?.password = password
                 print("Password change is a succes")
-                goToSignIn()
+                profilView.errorPassword.text = "password matching"
+                profilView.errorPassword.textColor = UIColor.green
             }
         } else {
             profilView.errorPassword.text = "Password are not matching"
@@ -134,8 +135,10 @@ class LoginViewControler: UIViewController, SignInViewDelegate, SignUpViewDelega
         return result
     }
     
+    
     func resetFields() {
         profilView.password.text = ""
         profilView.confirmPassword.text = ""
+        profilView.errorPassword.text = ""
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,38 +22,34 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jV-nz-Z2N">
-                    <rect key="frame" x="16" y="41" width="41" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jV-nz-Z2N">
+                    <rect key="frame" x="16" y="36" width="37" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7R-OE-MfD">
-                    <rect key="frame" x="16" y="117" width="74" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7R-OE-MfD">
+                    <rect key="frame" x="16" y="111" width="63" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-Tb-R2Q">
-                    <rect key="frame" x="16" y="70" width="337" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-Tb-R2Q">
+                    <rect key="frame" x="16" y="65" width="343" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZv-Qf-vby">
-                    <rect key="frame" x="13" y="146" width="340" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZv-Qf-vby">
+                    <rect key="frame" x="16" y="140" width="343" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7e-GX-w5K">
-                    <rect key="frame" x="13" y="202" width="337" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.23102452479999999" green="0.2231759177" blue="0.2428351684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7e-GX-w5K">
+                    <rect key="frame" x="16" y="190" width="343" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                     <state key="normal" title="Login">
                         <color key="titleColor" red="0.95136353732145074" green="0.91904281881960448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -61,18 +57,17 @@
                         <action selector="buttonLogin" destination="-1" eventType="touchUpInside" id="Ol8-cL-3db"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not Already registered ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87H-jD-zyk">
-                    <rect key="frame" x="13" y="286" width="185" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Already registered ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87H-jD-zyk">
+                    <rect key="frame" x="16" y="242" width="165" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6He-L8-Xvl">
-                    <rect key="frame" x="13" y="318" width="339" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.23102452478915897" green="0.22317591766915509" blue="0.24283516839378239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6He-L8-Xvl">
+                    <rect key="frame" x="16" y="267" width="343" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <accessibility key="accessibilityConfiguration" identifier="registerButton"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                     <state key="normal" title="Register">
                         <color key="titleColor" red="0.95136353730000001" green="0.91904281880000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -82,8 +77,29 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cor-Tb-R2Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="80h-Ul-Qp0"/>
+                <constraint firstItem="i7e-GX-w5K" firstAttribute="top" secondItem="eZv-Qf-vby" secondAttribute="bottom" constant="20" id="8sf-nS-602"/>
+                <constraint firstItem="87H-jD-zyk" firstAttribute="top" secondItem="i7e-GX-w5K" secondAttribute="bottom" constant="16" id="Iaq-cD-TY7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i7e-GX-w5K" secondAttribute="trailing" constant="16" id="MaC-TY-FmX"/>
+                <constraint firstItem="6He-L8-Xvl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Ss8-8a-Bi1"/>
+                <constraint firstItem="9jV-nz-Z2N" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="TFs-0Y-FTn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eZv-Qf-vby" secondAttribute="trailing" constant="16" id="TS6-z2-QBg"/>
+                <constraint firstItem="i7e-GX-w5K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="WUB-hW-Gsd"/>
+                <constraint firstItem="eZv-Qf-vby" firstAttribute="top" secondItem="P7R-OE-MfD" secondAttribute="bottom" constant="8" id="Xu9-zH-JUk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cor-Tb-R2Q" secondAttribute="trailing" constant="16" id="Zdg-Wq-ZbK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6He-L8-Xvl" secondAttribute="trailing" constant="16" id="h72-kU-voB"/>
+                <constraint firstItem="Cor-Tb-R2Q" firstAttribute="top" secondItem="9jV-nz-Z2N" secondAttribute="bottom" constant="8" id="oH5-0d-WqP"/>
+                <constraint firstItem="P7R-OE-MfD" firstAttribute="top" secondItem="Cor-Tb-R2Q" secondAttribute="bottom" constant="16" id="rxn-8V-eUc"/>
+                <constraint firstItem="9jV-nz-Z2N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="u5V-rL-dzM"/>
+                <constraint firstItem="87H-jD-zyk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="uwu-5Q-DDp"/>
+                <constraint firstItem="6He-L8-Xvl" firstAttribute="top" secondItem="87H-jD-zyk" secondAttribute="bottom" constant="4" id="uzs-hU-kHB"/>
+                <constraint firstItem="P7R-OE-MfD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="vzk-Cw-fTw"/>
+                <constraint firstItem="eZv-Qf-vby" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="xyq-PW-CdE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="20" y="60"/>
+            <point key="canvasLocation" x="-104" y="-580"/>
         </view>
     </objects>
 </document>
